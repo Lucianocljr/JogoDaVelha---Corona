@@ -35,3 +35,41 @@ botao9 = display.newRect( display.actualContentWidth/1.2, display.actualContentH
 botao9:setFillColor( 0 )
 
 --Botões
+
+--Posição das jogadas com X
+
+--jogadaX1 = display.newLine(0, display.actualContentHeight/3, display.actualContentWidth/3,  0,
+						   --0, 0,display.actualContentWidth/3, display.actualContentWidth/2)
+
+--jogadaX2 = display.newLine(display.actualContentWidth/3, 0, display.actualContentWidth/1.5,  display.actualContentHeight/3, 
+						   --display.actualContentWidth/1.5, 0, display.actualContentWidth/3, display.actualContentHeight/3)
+
+--jogadaX3 = display.newLine(display.actualContentWidth, 0, display.actualContentWidth/1.5,  display.actualContentHeight/3, 
+						   --display.actualContentWidth/1.5, 0, display.actualContentWidth, display.actualContentHeight/3)
+
+--Posição das jogadas com X
+
+--testes
+
+local options = 
+{
+    text = "Luciano Júnior",     
+    x = 100,
+    y = 200,
+    width = 128,
+    font = native.systemFont,   
+    fontSize = 18,
+    align = "right"  -- Alignment parameter
+}
+
+local function jogada (event)
+
+	display.newText(options)
+
+end	
+
+botao1:addEventListener("touch", jogada)
+
+
+
+--testes
