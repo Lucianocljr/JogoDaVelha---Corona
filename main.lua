@@ -1,13 +1,10 @@
 --Tabuleiro
 
-function gerarTabuleiro( )
-
 local linhaHorizontal1 = display.newLine( 0,  display.actualContentHeight/3, display.actualContentWidth, display.actualContentHeight/3 )
 local linhaHorizontal2 = display.newLine( 0,  display.actualContentHeight/1.5, display.actualContentWidth, display.actualContentHeight/1.5 )
 local linhaVertical1 = display.newLine( display.actualContentWidth/3,  0, display.actualContentWidth/3, display.actualContentHeight )
 local linhaVertical2 = display.newLine( display.actualContentWidth/1.5,  0, display.actualContentWidth/1.5, display.actualContentHeight )
-	return true
-end
+
 --Tabuleiro
 
 --Botões
@@ -65,9 +62,9 @@ condicaoDeJogar1 = fimDoJogo()
     if event.phase == "began" then
     	if condicaoDeJogar1 == false then
 	    	if tabuleiro[1][1] == ' ' then
-		        if jogador == 'O' then 
+		        if jogador == 'O' then
 		        tabuleiro[1][1] = 'O'
-		        --print("teste de localização "..tabuleiro[1][1]) 
+		        --print("teste de localização "..tabuleiro[1][1])
 		        jogadaO1 = display.newCircle(display.actualContentWidth/6,display.actualContentHeight/6, 48)
 		        jogadaO1:setFillColor( 0.0 )
 		        jogadaO1.strokeWidth = 2
@@ -90,7 +87,7 @@ condicaoDeJogar2 = fimDoJogo()
     if event.phase == "began" then
     	if condicaoDeJogar2 == false then
 	    	if tabuleiro[1][2] == ' ' then
-		        if jogador == 'O' then 
+		        if jogador == 'O' then
 		        tabuleiro[1][2] = 'O'
 		        jogadaO2 = display.newCircle(display.actualContentWidth/2,display.actualContentHeight/6, 48)
 		        jogadaO2:setFillColor( 0.0 )
@@ -114,7 +111,7 @@ condicaoDeJogar3 = fimDoJogo()
     if event.phase == "began" then
     	if condicaoDeJogar3 == false then
 	    	if tabuleiro[1][3] == ' ' then
-		        if jogador == 'O' then 
+		        if jogador == 'O' then
 		        tabuleiro[1][3] = 'O'
 		        jogadaO3 = display.newCircle(display.actualContentWidth/1.2,display.actualContentHeight/6, 48)
 				jogadaO3:setFillColor( 0.0 )
@@ -138,7 +135,7 @@ condicaoDeJogar4 = fimDoJogo()
     if event.phase == "began" then
     	if condicaoDeJogar4 == false then
 	    	if tabuleiro[2][1] == ' ' then
-		        if jogador == 'O' then 
+		        if jogador == 'O' then
 		        tabuleiro[2][1] = 'O'
 		        jogadaO4 = display.newCircle(display.actualContentWidth/6,display.actualContentHeight/2, 48)
 				jogadaO4:setFillColor( 0.0 )
@@ -162,7 +159,7 @@ condicaoDeJogar5 = fimDoJogo()
     if event.phase == "began" then
 	    	if condicaoDeJogar5 == false then
 	    	if tabuleiro[2][2] == ' ' then
-		        if jogador == 'O' then 
+		        if jogador == 'O' then
 		        tabuleiro[2][2] = 'O'
 		        jogadaO5 = display.newCircle(display.actualContentWidth/2,display.actualContentHeight/2, 48)
 				jogadaO5:setFillColor( 0.0 )
@@ -186,7 +183,7 @@ condicaoDeJogar6 = fimDoJogo()
     if event.phase == "began" then
     	if condicaoDeJogar6 == false then
 	    	if tabuleiro[2][3] == ' ' then
-		        if jogador == 'O' then 
+		        if jogador == 'O' then
 		        tabuleiro[2][3] = 'O'
 		        jogadaO6 = display.newCircle(display.actualContentWidth/1.2,display.actualContentHeight/2, 48)
 				jogadaO6:setFillColor( 0.0 )
@@ -210,7 +207,7 @@ condicaoDeJogar7 = fimDoJogo()
     if event.phase == "began" then
     	if condicaoDeJogar7 == false then
 	    	if tabuleiro[3][1] == ' ' then
-		        if jogador == 'O' then 
+		        if jogador == 'O' then
 		        tabuleiro[3][1] = 'O'
 		        jogadaO7 = display.newCircle(display.actualContentWidth/6,display.actualContentHeight/1.2, 48)
 				jogadaO7:setFillColor( 0.0 )
@@ -234,7 +231,7 @@ condicaoDeJogar8 = fimDoJogo()
     if event.phase == "began" then
     	if condicaoDeJogar8 == false then
 	    	if tabuleiro[3][2] == ' ' then
-		        if jogador == 'O' then 
+		        if jogador == 'O' then
 		        tabuleiro[3][2] = 'O'
 		        jogadaO8 = display.newCircle(display.actualContentWidth/2,display.actualContentHeight/1.2, 48)
 				jogadaO8:setFillColor( 0.0 )
@@ -258,7 +255,7 @@ condicaoDeJogar9 = fimDoJogo()
     if event.phase == "began" then
     	if condicaoDeJogar9 == false then
 	    	if tabuleiro[3][3] == ' ' then
-		        if jogador == 'O' then 
+		        if jogador == 'O' then
 		        tabuleiro[3][3] = 'O'
 		        jogadaO9 = display.newCircle(display.actualContentWidth/1.2,display.actualContentHeight/1.2, 48)
 				jogadaO9:setFillColor( 0.0 )
@@ -268,7 +265,7 @@ condicaoDeJogar9 = fimDoJogo()
 		        else
 		        tabuleiro[3][3] = 'X'
 		        jogadaX9 = display.newLine(display.actualContentWidth, display.actualContentHeight/1.5, display.actualContentWidth/1.5,  display.actualContentHeight,
-								   display.actualContentWidth/1.5, display.actualContentHeight/1.5,display.actualContentWidth, display.actualContentHeight)  
+								   display.actualContentWidth/1.5, display.actualContentHeight/1.5,display.actualContentWidth, display.actualContentHeight)
 				jogador = 'O'
 		        end
 			end
@@ -299,7 +296,7 @@ function tabuleiro:VerificaVencedorHorizontal()
 	end
 
 	if (tabuleiro[3][1] ~= ' ') and(tabuleiro[3][1] == tabuleiro[3][2]) and (tabuleiro[3][2] == tabuleiro[3][3]) then
-	
+
 	tracoHorizontal3 = display.newLine(0, display.actualContentHeight/1.2, display.actualContentWidth, display.actualContentHeight/1.2)
 	tracoHorizontal3:setStrokeColor( 1, 0, 0, 1 )
 	tracoHorizontal3.strokeWidth = 8
@@ -313,7 +310,7 @@ end
 function tabuleiro:VerificaVencedorVertical()
 
 	if (tabuleiro[1][1]~=' ') and (tabuleiro[1][1] == tabuleiro[2][1]) and (tabuleiro[2][1] == tabuleiro[3][1]) then
-	
+
 	tracoVertical1 = display.newLine(display.actualContentWidth/6, 0, display.actualContentWidth/6, display.actualContentHeight)
 	tracoVertical1:setStrokeColor( 1, 0, 0, 1 )
 	tracoVertical1.strokeWidth = 8
@@ -322,7 +319,7 @@ function tabuleiro:VerificaVencedorVertical()
 	end
 
 	if (tabuleiro[1][2]~=' ') and (tabuleiro[1][2] == tabuleiro[2][2]) and (tabuleiro[2][2] == tabuleiro[3][2]) then
-	
+
 	tracoVertical2 = display.newLine(display.actualContentWidth/2, 0, display.actualContentWidth/2, display.actualContentHeight)
 	tracoVertical2:setStrokeColor( 1, 0, 0, 1 )
 	tracoVertical2.strokeWidth = 8
@@ -345,7 +342,7 @@ end
 function tabuleiro:VerificaVencedorDiagonal()
 
 	if(tabuleiro[1][1]~=' ') and  (tabuleiro[1][1] == tabuleiro[2][2]) and (tabuleiro[2][2] == tabuleiro[3][3]) then
-	
+
 	tracoDiagonal1 = display.newLine(0, 0, display.actualContentWidth, display.actualContentHeight)
 	tracoDiagonal1:setStrokeColor( 1, 0, 0, 1 )
 	tracoDiagonal1.strokeWidth = 8
